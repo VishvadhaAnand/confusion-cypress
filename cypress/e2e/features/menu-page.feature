@@ -21,3 +21,7 @@ Scenario: Verify the display Dish and its Image in Menu Page
     When I visit the Menu Page
     Then I should see '11' dishes in Menu Page
     And I should see image for every dish in Menu Page
+
+Scenario: Verify the display of Dish name in Menu Page
+    When I visit the Menu Page
+    Then I should see every dish name in Menu Page

@@ -43,3 +43,10 @@ And("I should see image for every dish in Menu Page", () => {
     cy.wrap(dish).find(".img-thumbnail").should("be.visible");
   });
 });
+
+
+Then("I should see every dish name in Menu Page", () => {
+  cy.get(".dish").each((dish) => {
+    cy.wrap(dish).find(".media-body h3").should("be.visible")
+  });
+});
